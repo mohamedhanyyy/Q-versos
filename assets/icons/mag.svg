@@ -1,0 +1,70 @@
+<svg width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Mag">
+<mask id="mask0_3_10740" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="150" height="150">
+<path id="Mask" d="M75 0C24.1283 0 0 24.1283 0 75C0 125.872 24.1283 150 75 150C125.872 150 150 125.872 150 75C150 24.1283 125.872 0 75 0Z" fill="#387BFE"/>
+</mask>
+<g mask="url(#mask0_3_10740)">
+<path id="BG" d="M75 0C24.1283 0 0 24.1283 0 75C0 125.872 24.1283 150 75 150C125.872 150 150 125.872 150 75C150 24.1283 125.872 0 75 0Z" fill="#F5F7FF"/>
+<g id="Mag_2">
+<g id="Rectangle 4" filter="url(#filter0_d_3_10740)">
+<rect x="50.2502" y="29.25" width="49.5" height="67.5" rx="24.75" fill="#FFC519"/>
+</g>
+<g id="Rectangle 3" filter="url(#filter1_d_3_10740)">
+<rect x="44.2504" y="35.25" width="61.5" height="67.5" rx="29.96" fill="#4386F4"/>
+</g>
+<g id="Rectangle 2" filter="url(#filter2_d_3_10740)">
+<rect x="38.25" y="41.25" width="73.5" height="67.5" rx="33.75" fill="#17A160"/>
+</g>
+<g id="Rectangle 1" filter="url(#filter3_d_3_10740)">
+<rect x="32.2502" y="47.25" width="85.5" height="67.5" rx="33.75" fill="#7B2CBF"/>
+</g>
+<g id="Text and Image Box">
+<g id="Text Solid">
+<rect id="Rectangle 3_2" x="75.7505" y="87.75" width="33" height="6" rx="3" fill="#FAFAFA"/>
+<rect id="Rectangle 2_2" x="75.7505" y="77.9998" width="33" height="6" rx="3" fill="#FAFAFA"/>
+<rect id="Rectangle 1_2" x="75.7507" y="68.25" width="24" height="6" rx="3" fill="#FAFAFA"/>
+</g>
+<rect id="Image Solid" x="41.2505" y="66" width="30" height="30" rx="15" fill="#FAFAFA"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_3_10740" x="50.2502" y="27.11" width="49.5" height="69.64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6.42" operator="erode" in="SourceAlpha" result="effect1_dropShadow_3_10740"/>
+<feOffset dy="-8.56"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_10740"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_10740" result="shape"/>
+</filter>
+<filter id="filter1_d_3_10740" x="44.2504" y="31.11" width="61.5" height="71.64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6.42" operator="erode" in="SourceAlpha" result="effect1_dropShadow_3_10740"/>
+<feOffset dy="-10.56"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_10740"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_10740" result="shape"/>
+</filter>
+<filter id="filter2_d_3_10740" x="38.25" y="37.11" width="73.5" height="71.64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6.42" operator="erode" in="SourceAlpha" result="effect1_dropShadow_3_10740"/>
+<feOffset dy="-10.56"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_10740"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_10740" result="shape"/>
+</filter>
+<filter id="filter3_d_3_10740" x="32.2502" y="43.11" width="85.5" height="71.64" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="6.42" operator="erode" in="SourceAlpha" result="effect1_dropShadow_3_10740"/>
+<feOffset dy="-10.56"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 0 0.980392 0 0 0 1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3_10740"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3_10740" result="shape"/>
+</filter>
+</defs>
+</svg>
