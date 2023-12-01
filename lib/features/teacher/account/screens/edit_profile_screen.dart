@@ -1,5 +1,6 @@
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:untitled/shared/widgets/back_button.dart';
 
@@ -114,6 +115,28 @@ class _TeacherEditProfileScreenState extends State<TeacherEditProfileScreen> {
                   child: CustomTextField(
                       hintText: 'نبذة عني',
                       controller: TextEditingController()),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 15.h),
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(30),
+                      border: Border.all(
+                        color: Colors.grey.shade500,
+                      )
+
+                  ),
+                  child: DropdownButton(
+                    padding: EdgeInsets.only(right: 14.w,left: 6.w),
+                    hint: Text('مجالات التدريس',style: TextStyle(
+                        color: Colors.grey.shade300
+                    ),),
+                    isExpanded: true,
+                    underline: const SizedBox.shrink(),
+                    onChanged: (val){
+
+                    },
+                    items: ['test', 'test','test'].map((e) =>DropdownMenuItem(child: Text(e),value: e,)).toList(),
+                  ),
                 ),
 
                 CustomTextField(

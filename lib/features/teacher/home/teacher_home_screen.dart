@@ -531,6 +531,8 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                     'سوف يبدأ الدرس بعد 4 دقائق',
                     style: TextStyle(fontSize: 9),
                   ),
+                  const SizedBox(height: 5,),
+
                   Row(
                     children: [
                       ElevatedButton(
@@ -555,10 +557,11 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                       InkWell(
                         child: Text(
                           'Edit'.tr(),
-                          style: const TextStyle(
-                            color: Color(0xff989EA7),
+                          style:   TextStyle(
+                            color: Colors.grey.shade500,
                             fontSize: 10,
-                            fontWeight: FontWeight.w400,
+
+                            fontWeight: FontWeight.w700,
                           ),
                         ),
                         onTap: () {},
@@ -628,6 +631,8 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                     'سوف يبدأ الدرس بعد 4 دقائق',
                     style: TextStyle(fontSize: 9),
                   ),
+                  const SizedBox(height: 5,),
+
                   Row(
                     children: [
                       ElevatedButton(
