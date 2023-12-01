@@ -253,18 +253,7 @@ class _StudentSubscribeScreenState extends State<StudentSubscribeScreen> {
                           imagePath: 'assets/icons/flexiblePackage.svg',
                           price: '20\$',
                         )),
-                    InkWell(
-                        onTap: () {
-                          selectedPackageIndex = 3;
-                          setState(() {});
-                        },
-                        child: buildContainer(
-                          index: 3,
-                          title: 'الباقة المرنة',
-                          description: 'هذا وصف للخطة ',
-                          imagePath: 'assets/icons/flexiblePackage.svg',
-                          price: '20\$',
-                        )),
+
                   ],
                 ),
               );
@@ -442,7 +431,7 @@ class _StudentSubscribeScreenState extends State<StudentSubscribeScreen> {
                 fontWeight: FontWeight.w300,
                 color: selectedPackageIndex == index
                     ? Colors.white
-                    :   Colors.grey.shade500),
+                    :   Colors.grey.shade900),
           ),
           Flexible(
             child: Text(

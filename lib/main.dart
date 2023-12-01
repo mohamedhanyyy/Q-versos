@@ -6,6 +6,7 @@ import 'package:untitled/shared/functions/restart_app.dart';
 import 'my_app.dart';
 
 void main() {
+
   WidgetsFlutterBinding.ensureInitialized();
   GeneralFunctions.setPreferredOrientation();
   runApp(

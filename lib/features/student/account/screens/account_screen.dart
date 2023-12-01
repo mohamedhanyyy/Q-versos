@@ -67,7 +67,7 @@ class _StudentAccountScreenState extends State<StudentAccountScreen> {
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text(
-                                  'Mohamed Mady',
+                                  'Mohamed Hany',
                                   style: TextStyle(
                                       fontSize: 16.sp,
                                       color: const Color(0xff263238),
@@ -187,47 +187,103 @@ class _StudentAccountScreenState extends State<StudentAccountScreen> {
                   EdgeInsets.only(top: 9, left: 16.w, right: 16.w, bottom: 9),
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 14.h),
-                child: Row(
+                child: Column(
                   children: [
-                    CircleAvatar(
-                      radius: 22,
-                      backgroundColor: const Color(0xffC4C4C4),
-                      child: SvgPicture.asset('assets/icons/twomen.svg'),
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 22,
+                          backgroundColor: const Color(0xffC4C4C4),
+                          child: SvgPicture.asset('assets/icons/twomen.svg'),
+                        ),
+                        SizedBox(width: 20.w),
+                        Text(
+                          'Family'.tr(),
+                          style: TextStyle(
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w500,
+                              color: const Color(0xff1F1F1F)),
+                        ),
+                        const Spacer(),
+                        // InkWell(
+                        //   onTap: () {},
+                        //   child: Container(
+                        //     padding: const EdgeInsets.only(
+                        //         left: 14, right: 14, top: 2, bottom: 1),
+                        //     decoration: BoxDecoration(
+                        //         color: AppColors.orangeColor,
+                        //         borderRadius: BorderRadius.circular(50)),
+                        //     child: Row(
+                        //       children: [
+                        //         Text(
+                        //           'Check plans'.tr(),
+                        //           style: TextStyle(
+                        //               fontSize: 9.sp,
+                        //               color: Colors.white,
+                        //               fontWeight: FontWeight.w500),
+                        //         ),
+                        //         const Icon(
+                        //           Icons.keyboard_arrow_left_sharp,
+                        //           color: Colors.white,
+                        //         )
+                        //       ],
+                        //     ),
+                        //   ),
+                        // )
+                      ],
                     ),
-                    SizedBox(width: 20.w),
-                    Text(
-                      'Family'.tr(),
-                      style: TextStyle(
-                          fontSize: 14.sp,
-                          fontWeight: FontWeight.w500,
-                          color: const Color(0xff1F1F1F)),
+                    const SizedBox(height: 15,),
+
+                    Row(
+                      children: [
+                        CircleAvatar(
+                          radius: 22,
+                          backgroundColor: const Color(0xffC4C4C4),
+                          child: Icon(Icons.language),
+                        ),
+                        SizedBox(width: 20.w),
+                        Text(
+                          'لغة التدريس'.tr(),
+                          style: TextStyle(
+                              fontSize: 14.sp,
+                              fontWeight: FontWeight.w500,
+                              color: const Color(0xff1F1F1F)),
+                        ),
+                        const Spacer(),
+                        Text(
+                          'اللغة العربية',
+                          style: TextStyle(
+                              fontSize: 10.sp,
+                              fontWeight: FontWeight.w500,
+                              color:  Colors.black),
+                        ),
+                        // InkWell(
+                        //   onTap: () {},
+                        //   child: Container(
+                        //     padding: const EdgeInsets.only(
+                        //         left: 14, right: 14, top: 2, bottom: 1),
+                        //     decoration: BoxDecoration(
+                        //         color: AppColors.orangeColor,
+                        //         borderRadius: BorderRadius.circular(50)),
+                        //     child: Row(
+                        //       children: [
+                        //         Text(
+                        //           'Check plans'.tr(),
+                        //           style: TextStyle(
+                        //               fontSize: 9.sp,
+                        //               color: Colors.white,
+                        //               fontWeight: FontWeight.w500),
+                        //         ),
+                        //         const Icon(
+                        //           Icons.keyboard_arrow_left_sharp,
+                        //           color: Colors.white,
+                        //         )
+                        //       ],
+                        //     ),
+                        //   ),
+                        // )
+                      ],
                     ),
-                    const Spacer(),
-                    // InkWell(
-                    //   onTap: () {},
-                    //   child: Container(
-                    //     padding: const EdgeInsets.only(
-                    //         left: 14, right: 14, top: 2, bottom: 1),
-                    //     decoration: BoxDecoration(
-                    //         color: AppColors.orangeColor,
-                    //         borderRadius: BorderRadius.circular(50)),
-                    //     child: Row(
-                    //       children: [
-                    //         Text(
-                    //           'Check plans'.tr(),
-                    //           style: TextStyle(
-                    //               fontSize: 9.sp,
-                    //               color: Colors.white,
-                    //               fontWeight: FontWeight.w500),
-                    //         ),
-                    //         const Icon(
-                    //           Icons.keyboard_arrow_left_sharp,
-                    //           color: Colors.white,
-                    //         )
-                    //       ],
-                    //     ),
-                    //   ),
-                    // )
                   ],
                 ),
               ),

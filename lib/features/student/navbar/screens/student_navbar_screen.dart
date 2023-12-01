@@ -56,7 +56,7 @@ class _StudentNavBarScreenState extends State<StudentNavBarScreen> {
 
       bottomNavigationBar: BottomAppBar(
         elevation: 0,
-        height: 59.h,
+        height:75.h,
         color: Colors.grey.shade50,
         shape: const CircularNotchedRectangle(),
         notchMargin: 2,

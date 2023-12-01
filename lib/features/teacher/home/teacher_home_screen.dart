@@ -69,7 +69,7 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                         padding: const EdgeInsets.symmetric(
                             horizontal: 16, vertical: 3),
                         child: Text(
-                          'Available'.tr(),
+                          'متاح لجلسة مجانية',
                           style: TextStyle(
                             color: AppColors.orangeColor,
                             fontWeight: FontWeight.w400,
@@ -508,8 +508,8 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
           Row(
             children: [
               Container(
-                height: 100,
-                width: 100,
+                height: 90.w,
+                width: 90.w,
                 decoration: const BoxDecoration(
                     shape: BoxShape.circle,
                     color: Colors.white,
@@ -536,7 +536,7 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          fixedSize: Size(190.w, 17.h),
+                          fixedSize: Size(140.w, 30),
                           elevation: 0,
                           backgroundColor: AppColors.primaryColor,
                           shape: RoundedRectangleBorder(
@@ -551,7 +551,7 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                               color: Colors.white),
                         ),
                       ),
-                      SizedBox(width: 10.w),
+                      SizedBox(width: 50.w),
                       InkWell(
                         child: Text(
                           'Edit'.tr(),
@@ -633,7 +633,7 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                       ElevatedButton(
                         onPressed: () {},
                         style: ElevatedButton.styleFrom(
-                          fixedSize: Size(190.w, 17.h),
+                          fixedSize: Size(160.w, 17.h),
                           elevation: 0,
                           backgroundColor: AppColors.primaryColor,
                           shape: RoundedRectangleBorder(
@@ -648,7 +648,7 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                               color: Colors.white),
                         ),
                       ),
-                      SizedBox(width: 10.w),
+                      SizedBox(width: 30.w),
                       InkWell(
                         child: Text(
                           'Reject'.tr(),
@@ -659,7 +659,7 @@ class _TeacherHomeScreenState extends State<TeacherHomeScreen> {
                           ),
                         ),
                         onTap: () {},
-                      )
+                      ),
                     ],
                   ),
                 ],

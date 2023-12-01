@@ -3,6 +3,10 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:untitled/shared/widgets/back_button.dart';
 
+import '../../../../shared/resources/colors.dart';
+import '../../../../shared/widgets/custom_button.dart';
+import '../../../../shared/widgets/custom_text_field.dart';
+
 class TeacherGroupStudentsScreen extends StatefulWidget {
   const TeacherGroupStudentsScreen({super.key});
 
@@ -22,13 +26,18 @@ class _TeacherGroupStudentsScreenState
         style: ElevatedButton.styleFrom(
           fixedSize: const Size(183,50),
           elevation: 0,
+          backgroundColor: AppColors.primaryColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           )
         ),
-        onPressed: (){},
-        icon: const Icon(Icons.add),
-        label: const Text('أضف طالب'),
+        onPressed: (){
+          showAddFamilyBottomSheet    (context);
+        },
+        icon: const Icon(Icons.add,color: Colors.white,),
+        label: const Text('أضف طالب',style: TextStyle(
+          color: Colors.white
+        ),),
       ),
       appBar: const PreferredSize(
         preferredSize: Size(double.infinity, 80),
@@ -106,4 +115,64 @@ class _TeacherGroupStudentsScreenState
       ),
     );
   }
+  void showAddFamilyBottomSheet(BuildContext context) {
+    showModalBottomSheet(
+        isScrollControlled: true,
+        shape: const RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+              topLeft: Radius.circular(24),
+              topRight: Radius.circular(24),
+            )),
+        // isDismissible: true,
+        context: context,
+        builder: (context) {
+          return Padding(
+            padding: EdgeInsets.only(
+                bottom: MediaQuery.of(context).viewInsets.bottom),
+            child: Container(
+
+              padding: EdgeInsets.symmetric(horizontal: 16.w,vertical: 15),
+              width: double.infinity,
+              decoration: const BoxDecoration(
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(24),
+                    topRight: Radius.circular(24),
+                  )),
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.only(top: 5, bottom: 16),
+                    child: Text(
+                      'إضافة طالب جديد',
+                      style: TextStyle(
+                        color: Colors.black,
+                        fontSize: 20.sp,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                  CustomTextField(
+                      hintText: 'اسم الطالب', controller: TextEditingController()),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 16),
+                    child: CustomTextField(
+                      textInputType: TextInputType.phone,
+                        hintText: 'رقم هاتف الطالب', controller: TextEditingController()),
+                  ),
+                  SizedBox(height: 10.h),
+                  CustomElevatedButton(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      buttonText: 'إضافة',
+                      fontSize: 16,
+                      height: 50.h),
+                ],
+              ),
+            ),
+          );
+        });
+  }
+
 }

@@ -14,6 +14,7 @@ class AppThemes {
     hoverColor: Colors.transparent,
     colorScheme: ColorScheme.fromSwatch(
       primarySwatch: Palette.kToDark,
-    ).copyWith(background: Colors.white),
+    ).copyWith(background: Colors.white,),
+
   );
 }

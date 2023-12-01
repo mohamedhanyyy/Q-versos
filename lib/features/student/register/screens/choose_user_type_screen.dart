@@ -81,7 +81,7 @@ class ChooseRegisterUserTypeScreen extends StatelessWidget{
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(27),
                           side:
-                              const BorderSide(color: AppColors.orangeColor)),
+                          const BorderSide(color: AppColors.orangeColor)),
                       minimumSize: Size(138.w, 56.h)),
                   child: Text('Teacher'.tr(),
                       style: TextStyle(
@@ -89,6 +89,7 @@ class ChooseRegisterUserTypeScreen extends StatelessWidget{
                           fontSize: 17.sp,
                           fontWeight: FontWeight.w500)),
                 ),
+
                 const Spacer(),
                 ElevatedButton(
                   onPressed: () {
@@ -96,6 +97,8 @@ class ChooseRegisterUserTypeScreen extends StatelessWidget{
                         const StudentRegisterScreen());
                   },
                   style: ElevatedButton.styleFrom(
+                     backgroundColor:AppColors.primaryColor
+                      ,
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(27)),
@@ -201,6 +204,7 @@ class ChooseLoginUserTypeScreen extends StatelessWidget{
                         const StudentLoginScreen());
                   },
                   style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.primaryColor,
                       elevation: 0,
                       shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(27)),

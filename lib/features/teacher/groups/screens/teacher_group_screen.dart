@@ -1,5 +1,6 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
+import 'package:untitled/features/teacher/groups/screens/add_group_screen.dart';
 import 'package:untitled/features/teacher/groups/screens/group_students_screen.dart';
 
 import '../../../../services/navigation/navigation.dart';
@@ -87,7 +88,9 @@ class _TeacherGroupScreenState extends State<TeacherGroupScreen> {
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(color: Colors.black12)),
               child: IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    AppNavigation.navigate(AddGroupScreen());
+                  },
                   icon: const Icon(
                     Icons.add_circle,
                     color: AppColors.orangeColor,
