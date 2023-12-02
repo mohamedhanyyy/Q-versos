@@ -1,6 +1,7 @@
 import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:untitled/features/general/splash/screens/splash_screen.dart';
 import 'package:untitled/features/teacher/attaches/screens/attaches_screen.dart';
 import 'package:untitled/shared/themes/app_theme.dart';
 
@@ -22,8 +23,8 @@ class MyApp extends StatelessWidget {
           localizationsDelegates: context.localizationDelegates,
           supportedLocales: context.supportedLocales,
           locale: context.locale,
-          home: const TeacherAttachesScreen(),
-          // home: const TeacherNavBarScreen(),
+          // home: const TeacherAttachesScreen(),
+          home: const SplashScreen(),
         );
       },
     );
