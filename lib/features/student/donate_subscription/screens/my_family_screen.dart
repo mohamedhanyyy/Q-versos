@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../services/navigation/navigation.dart';
+import '../../../../shared/resources/colors.dart';
 import '../../../../shared/widgets/custom_button.dart';
 import '../../../../shared/widgets/custom_text_field.dart';
 import '../../register/screens/well_done_screen.dart';
@@ -58,12 +59,15 @@ class _MyFamilyScreenState extends State<MyFamilyScreen> {
                 Padding(
                   padding: const EdgeInsets.only(top: 40, bottom: 15),
                   child: ElevatedButton(
+
                     onPressed: () {
                       showAddFamilyBottomSheet(context);
                     },
                     style: ElevatedButton.styleFrom(
+                      backgroundColor: AppColors.primaryColor,
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(8),
+
                         ),
                         elevation: 0,
                         minimumSize: Size(188.w, 48.h)),
@@ -72,6 +76,7 @@ class _MyFamilyScreenState extends State<MyFamilyScreen> {
                       style: const TextStyle(
                         fontSize: 15,
                         fontFamily: 'Inter',
+                        color: Colors.white,
                         fontWeight: FontWeight.w700,
                       ),
                     ),

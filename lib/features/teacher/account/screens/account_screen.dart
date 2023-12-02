@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:untitled/features/teacher/account/screens/edit_profile_screen.dart';
+import 'package:untitled/features/teacher/attaches/screens/attaches_screen.dart';
 import 'package:untitled/services/navigation/navigation.dart';
 import 'package:untitled/shared/resources/colors.dart';
 
@@ -301,7 +302,9 @@ class _TeacherAccountScreenState extends State<TeacherAccountScreen> {
                         ),
                         const Spacer(),
                         InkWell(
-                          onTap: () {},
+                          onTap: () {
+                            AppNavigation.navigate(TeacherAttachesScreen());
+                          },
                           child: Container(
                             padding: const EdgeInsets.only(
                                 left: 14, right: 14, top: 2, bottom: 1),
